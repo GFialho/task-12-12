@@ -31,6 +31,8 @@ functions:
   - ${file(sls/functions/createAlbum.yml)}
   - ${file(sls/functions/listAlbuns.yml)}
   - ${file(sls/functions/authorizerFunc.yml)}
-  - ${file(sls/functions/getToken.yml)}
+
+  # Idea of getToken endpoint
+  #- ${file(sls/functions/getToken.yml)}
 
 resources:
