@@ -1,0 +1,5 @@
+authorizerFunc:
+  description: "Authorizer Func"
+  handler: src/functions/authorizer/handler.main
+  memorySize: 256
+  timeout: 30

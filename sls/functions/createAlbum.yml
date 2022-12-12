@@ -1,0 +1,11 @@
+createAlbumn:
+  description: "Create albumn on db"
+  handler: src/functions/createAlbumn/handler.main
+  memorySize: 256
+  timeout: 30
+  events:
+    - http:
+        path: albumn
+        method: POST
+        cors: true
+        authorizer: authorizerFunc

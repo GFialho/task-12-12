@@ -1,0 +1,10 @@
+getToken:
+  description: "Get User token"
+  handler: src/functions/getToken/handler.main
+  memorySize: 256
+  timeout: 30
+  events:
+    - http:
+        path: token
+        method: GET
+        cors: true

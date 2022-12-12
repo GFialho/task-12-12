@@ -1,0 +1,11 @@
+listAlbumn:
+  description: "List albumns"
+  handler: src/functions/listAlbumn/handler.main
+  memorySize: 256
+  timeout: 30
+  events:
+    - http:
+        path: albumn
+        method: GET
+        cors: true
+        authorizer: authorizerFunc
